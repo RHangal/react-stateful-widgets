@@ -45,12 +45,12 @@ export default function Input() {
     // Log out the synthetic event object 'evt' and see for yourself.
     const { value } = evt.target;
     console.log(evt)
-    setInputValue(inputValue => inputValue.concat(value))
+    setInputValue(value)
     /* STEP 4 */
   };
   const reset = () => {
     /* STEP 5 */
-    setInputValue(inputValue => inputValue.replace(inputValue, ""));
+    setInputValue("");
   };
 
   const style = {
